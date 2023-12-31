@@ -23,9 +23,6 @@ form.addEventListener("submit",(event) => {
     equationElement.textContent = equationString;
     equationElement.style.display = "block";
 
-    // Calculate the area
-    const area = (base * height ) / 2;
-
     // Update the result element
     resultElement.textContent = `Result: A = ${area.toFixed(2)}`;
 
