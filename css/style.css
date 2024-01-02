@@ -1,12 +1,82 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;    
+    background-color: aliceblue;
+    /* align-items: center; */
+    /* min-height: 100vh; */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;   
+    margin: auto;
+    margin-bottom: 0; 
+    padding: 20px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+header, main {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+header {
+    background-color: #0b3f6a;
+    color: aliceblue;
+}
+
+main {
+    background-color: #80b3ff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #187bcd;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+}
+
+.header:hover {
+    background-color: white;
+    color: #187bcd;
+}
+
+/* .header:active {
+    background-color: #115388;
+    color: white;    
+} */
+
+.dropdown {
+    width: 90%;    
+    display: none;
+    padding: 20px;
+    background-color: #80b3ff;
+    border-radius: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.input-row {
+    margin-bottom: 10px;
 }
 
 /* Form Equation */
 input-form {
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
+    margin-top: 26px;    
 }
 
 label {
@@ -38,7 +108,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 button:hover {
@@ -56,3 +126,34 @@ button:active {
     font-weight: bolder;
     margin-top: 10px;
 } */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {    
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push to bottom */
+    font-size: 14px;
+    height: min-content;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+        flex-direction: column;
+    }
+    header, main {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+}
