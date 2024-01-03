@@ -145,11 +145,14 @@ footer {
 
 @media only screen and (max-width: 768px) {
     body {
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;               
+        font-size: 18px;                      
     }
     
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
     header, main {
         width: 100%;
         margin-bottom: 20px;
