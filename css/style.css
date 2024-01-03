@@ -9,7 +9,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-around;   
     margin: auto;
     margin-bottom: 0; 
     padding: 20px;
