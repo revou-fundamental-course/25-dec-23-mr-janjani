@@ -6,7 +6,7 @@ body {
     /* align-items: center; */
     /* min-height: 100vh; */
 }
-
+    /* Header and Main */
 .container {
     display: flex;
     justify-content: space-around;   
@@ -72,7 +72,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Form Equation */
+    /* Form Equation */
 input-form {
     display: flex;
     flex-direction: column;
@@ -127,6 +127,7 @@ button:active {
     margin-top: 10px;
 } */
 
+    /* Footer Section */
 a {
     text-decoration: none;
     color: #fff;
@@ -143,6 +144,7 @@ footer {
     height: min-content;
 }
 
+    /* Mobile Responsive */
 @media only screen and (max-width: 768px) {
     body {
         font-size: 18px;                      

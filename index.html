@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Container for Header and Main -->
     <div class="container">
         <header>
             <h1>
@@ -26,6 +27,8 @@
                 Triangle
             </h2>
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/%D0%A2%D1%80%D0%B8%D0%BA%D1%83%D1%82%D0%BD%D0%B8%D0%BA.jpg" alt="Triangle">
+            
+            <!-- Triangle Area Calculator -->
             <h3 class="header" onclick="toogleDropdown('dropdown1')">
                 Triangle Area
             </h3>
@@ -46,6 +49,7 @@
                     </li>
                 </ul>
                 <form id="form-input" action="#">
+                    <!-- Input for Area Calculation -->
                     <div class="input-row">
                         <label for="base">Base:</label>
                         <input type="number" name="base" id="base" class="katik-input">
@@ -54,15 +58,19 @@
                         <label for="height">Height:</label>
                         <input type="number" name="height" id="height" class="katik-input">
                     </div>
+                    <!-- Button for calculation -->
                     <div class="buttons">
                         <button type="submit">Calculate</button>
                         <button type="reset">Reset</button>
                     </div>                  
+                    <!-- Display equation, calculation and result after "Calculate" -->
                     <p id="equation" style="display: none;">A = 1/2 x base x height</p>
                     <p id="calculation" style="display: none;">Calculation</p>            
                     <p id="result" style="display: none;">Result</p>
                 </form>
             </div>
+            
+            <!-- Triangle Perimeter Calculator -->
             <h3 class="header" onclick="toogleDropdown('dropdown2')">
                 Triangle Perimeter
             </h3>
@@ -81,6 +89,7 @@
                         \(a, b, c\) = sides of triangle
                     </li>
                 </ul>
+                <!-- Input for perimeter calculation -->
                 <form id="form-input" action="#">
                     <label for="side1">a: </label>
                     <input type="number" name="side1" id="side1" class="katik-input"><br>
@@ -88,10 +97,12 @@
                     <input type="number" name="side2" id="side2" class="katik-input"><br>
                     <label for="side3">c: </label>
                     <input type="number" name="side3" id="side3" class="katik-input">
+                    <!-- Button for calculation -->
                     <div class="buttons">
                         <button id="calculatePerimeter">Calculate</button>
                         <button type="reset">Reset</button>
                     </div>
+                    <!-- Display equation, calculation and result after "Calculate" -->
                     <p id="equationPerimeter" style="display: none;">P = a + b + c</p>
                     <p id="calculationPerimeter" style="display: none;">Calculation</p>
                     <p id="resultPerimeter" style="display: none;">Result</p>
@@ -99,6 +110,8 @@
             </div>
         </main>
     </div>
+    
+    <!-- Footer Section -->
     <footer>
         <p>
             &copy; 2024 Muhammad Janjani | Katik - Triangle Calculator App
